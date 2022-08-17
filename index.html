@@ -1,0 +1,62 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <meta charset="UTF-8">
+    <title>product</title>
+    </head>
+     <body>
+         <h1 class="text-primary text-center py-5">Our Products</h1>
+         <div class="container">
+           <div class="form-group">
+             <label >Product Name</label>
+             <input class="form-control" id="name">
+           </div>
+           <div class="form-group">
+             <label >Product Price</label>
+             <input class="form-control" id="price">
+           </div>
+           <div class="form-group">
+             <label >Product Catgroy</label>
+             <input class="form-control" id="cat">
+           </div>
+           <div class="form-group">
+             <label >Product Scrpation</label>
+              <textarea class="form-control" cols="20" rows="5" id="scr"></textarea>
+           </div>
+           <button class="btn btn-primary" onclick="addProducts()">Add Product</button>
+           <input placeholder="search" onkeyup="searchProduct(this.value)" class="form-control w-50 my-5 mx-auto" >
+         
+          
+         </div>
+         <table class="table container my-5 text-primary">
+           <thead>
+             <th>Index</th>
+             <th>Name</th>
+             <th>Price</th>
+             <th>Cat</th>
+             <th>Scr</th>
+             <th>delete</th>
+            
+
+           </thead>
+           <tbody id="tbody">
+            
+           </tbody>
+         </table>
+
+
+
+
+
+
+
+
+       
+      <script src="js/jquery-3.5.1.slim.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+     </body>
+     </html> 
